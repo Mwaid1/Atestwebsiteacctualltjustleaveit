@@ -1,50 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<title>notepad</title>
-</head>
-<style type="text/css">
-ol,ul{
-display:block;
-list-style-type:none;
-margin:3px;
-}
-</style><body>
-<div>&lt;/form&gt;&lt;h1&gt;&lt;b&gt;PAYMENT&lt;/b&gt;&lt;/h1&gt;<br>
-&lt;form&gt;<br>
-&nbsp; &lt;div&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;input type="text" id="fname" name="fname" placeholder="enter your name"&gt;<br>
-&nbsp; &lt;/div&gt;<br>
-&nbsp; &lt;div&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;label for="lname"&gt;last name:&lt;/label&gt;&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;input type="text" id="lname" name="lname" placeholder="enter your last name"&gt;<br>
-&nbsp; &lt;/div&gt;<br>
-&nbsp; &lt;div&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;label for="email"&gt;email:&lt;/label&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;input type="email" id="email" name="email" placeholder="enter your email"&gt;<br>
-&nbsp; &lt;/div&gt;<br>
-&nbsp; &lt;div&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;label for="phone"&gt;phone:&lt;/label&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;input type="tel" id="phone" name="phone" placeholder="enter your phone number"&gt;<br>
-&nbsp; &lt;/div&gt;<br>
-&nbsp; &lt;div&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;label for="address"&gt;address:&lt;/label&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;input type="text" id="address" name="address" placeholder="enter your address"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;label for="choose payment method"&gt;Choose payment method:&lt;/label&gt;&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;input type="radio" id="paypal" name="payment_method" value="paypal"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;label for="paypal"&gt;&lt;a href='www.paypal.com'&gt;PayPal&lt;/a&gt;&lt;/label&gt;&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;input type="radio" id="visa" name="payment_method" value="visa"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;label for="visa"&gt;&lt;a href='www.visa.com'&gt;Visa&lt;/a&gt;&lt;/label&gt;&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;input type="radio" id="pay_at_delivery" name="payment_method" value="pay_at_delivery"&gt;<br>
-&nbsp;&nbsp;&nbsp; &lt;label for="pay_at_delivery"&gt;Pay at delivery&lt;/label&gt;<br>
-&nbsp; &lt;/div&gt;&lt;input type="submit" value="Submit"&gt;<br>
-&nbsp; &lt;script&gt;<br>
-&nbsp; document.addEventListener("submit", function(event) {<br>
-&nbsp;&nbsp;&nbsp; event.preventDefault();<br>
-&nbsp;&nbsp;&nbsp; window.location.href = "thank_you.html";<br>
-&nbsp; });</div>
-</body>
-</html>
+<h1><b>PAYMENT</b></h1>
+<form>
+  <div>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" placeholder="enter your name">
+  </div>
+  <div>
+    <label for="lname">last name:</label><br>
+    <input type="text" id="lname" name="lname" placeholder="enter your last name">
+  </div>
+  <div>
+    <label for="email">email:</label>
+    <input type="email" id="email" name="email" placeholder="enter your email">
+  </div>
+  <div>
+    <label for="phone">phone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="enter your phone number">
+  </div>
+  <div>
+    <label for="address">address:</label>
+    <input type="text" id="address" name="address" placeholder="enter your address">
+    <label for="choose payment method">Choose payment method:</label><br>
+    <input type="radio" id="paypal" name="payment_method" value="paypal">
+    <label for="paypal"><a href='www.paypal.com'>PayPal</a></label><br>
+    <input type="radio" id="visa" name="payment_method" value="visa">
+    <label for="visa"><a href='www.visa.com'>Visa</a></label><br>
+    <input type="radio" id="pay_at_delivery" name="payment_method" value="pay_at_delivery">
+    <label for="pay_at_delivery">Pay at delivery</label>
+  </div><input type="submit" value="Submit">
+  <script>
+  document.addEventListener("submit", function(event) {
+    event.preventDefault();
+    window.location.href = "thank_you.html";
+  });
