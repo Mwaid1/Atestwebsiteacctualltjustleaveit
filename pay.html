@@ -1,30 +1,20 @@
 <h1><b>PAYMENT</b></h1>
-<form>
-  <div>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" placeholder="enter your name">
-  </div>
-  <div>
-    <label for="lname">last name:</label><br>
-    <input type="text" id="lname" name="lname" placeholder="enter your last name">
-  </div>
-  <div>
-    <label for="email">email:</label>
-    <input type="email" id="email" name="email" placeholder="enter your email">
-  </div>
-  <div>
-    <label for="phone">phone:</label>
-    <input type="tel" id="phone" name="phone" placeholder="enter your phone number">
-  </div>
-  <div>
-    <label for="address">address:</label>
-    <input type="text" id="address" name="address" placeholder="enter your address">
-    <label for="choose payment method">Choose payment method:</label><br>
-    <input type="radio" id="paypal" name="payment_method" value="paypal">
-    <label for="paypal"><a href='www.paypal.com'>PayPal</a></label><br>
-    <input type="radio" id="visa" name="payment_method" value="visa">
-    <label for="visa"><a href='www.visa.com'>Visa</a></label><br>
-    <input type="radio" id="pay_at_delivery" name="payment_method" value="pay_at_delivery">
-    <label for="pay_at_delivery">Pay at delivery</label>
-  </div>
+ <!-- modify this form HTML and place wherever you want your form --> 
+<form action="https://formspree.io/f/mzbnaekr" method="POST" > <label> Your email: <input type="email" name="email"> </label> <label>
+
+ <label for="phone">phone:</label> 
+     <input type="tel" id="phone" name="phone" placeholder="enter your phone number"> 
+   </div> 
+   <div> 
+     <label for="address">address:</label> 
+     <input type="text" id="address" name="address" placeholder="enter your address"> 
+     <label for="choose payment method">Choose payment method:</label><br> 
+     <input type="radio" id="paypal" name="payment_method" value="paypal"> 
+     <label for="paypal"><a href='www.paypal.com'>PayPal</a></label><br> 
+     <input type="radio" id="visa" name="payment_method" value="visa"> 
+     <label for="visa"><a href='www.visa.com'>Visa</a></label><br> 
+     <input type="radio" id="pay_at_delivery" name="payment_method" value="pay_at_delivery"> 
+     <label for="pay_at_delivery">Pay at delivery</label>
+
+ <!-- your other form fields go here --> <button type="submit">Send</button> </form>
 <button onclick="window.location.href='thank_you.html'">Submit</button>
